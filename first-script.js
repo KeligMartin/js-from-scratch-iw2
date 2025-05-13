@@ -38,9 +38,18 @@ for(let i = 0; i < tasks.length; i++) {
 	tasksDoubleesNatif.push(element)
 }
 
+const totalPriority = tasksDoublees.reduce((acc, currentValue) => acc + currentValue, 0)
+
+// natif
+let total = 0
+for(let i = 0; i < tasksDoublees.length; i++) {
+	total = total + tasksDoublees[i]
+}
+
 console.table(tasks.sort((a, b) => a.priority - b.priority))
 console.table(tasksUrgentes)
 console.table(tasksUrgentesNatives)
 console.table(tasksDoubleesNatif)
+console.log(totalPriority)
 
 // fuction sort()
