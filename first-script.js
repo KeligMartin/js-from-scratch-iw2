@@ -1,12 +1,19 @@
 class Task {
-	constructor(title, description, priority) {
+	#author
+
+	constructor(title, description, priority, author) {
 		this.title = title
 		this.description = description
 		this.priority = priority
+		this.#author
+	}
+
+	get author() {
+		return this.author
 	}
 }
 
-const task1 = new Task("Tache 1", "description 1", 1)
+const task1 = new Task("Tache 1", "description 1", 1, "Kelig")
 const task2 = new Task("Tache 2", "description 2", 10)
 const task3 = new Task("Tache 3", "description 3", 7)
 const task4 = new Task("Tache 4", "description 4", 57)
