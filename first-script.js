@@ -5,7 +5,7 @@ class Task {
 		this.title = title
 		this.description = description
 		this.priority = priority
-		this.#author
+		this.#author = author
 	}
 
 	get author() {
