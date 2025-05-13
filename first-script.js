@@ -25,8 +25,22 @@ for(let i = 0; i < tasks.length; i++) {
 	}
 }
 
+function doublePriority(priority) {
+	return priority * 2
+}
+
+const tasksDoublees = tasks.map((element) => doublePriority(element.priority))
+// natif
+const tasksDoubleesNatif = []
+for(let i = 0; i < tasks.length; i++) {
+	const element = tasks[i]
+	element.priority = element.priority * 2
+	tasksDoubleesNatif.push(element)
+}
+
 console.table(tasks.sort((a, b) => a.priority - b.priority))
 console.table(tasksUrgentes)
 console.table(tasksUrgentesNatives)
+console.table(tasksDoubleesNatif)
 
 // fuction sort()
