@@ -45,7 +45,7 @@ for(let i = 0; i < tasks.length; i++) {
 	tasksDoubleesNatif.push(element)
 }
 
-const totalPriority = tasksDoublees.reduce((acc, currentValue) => acc + currentValue, 0)
+const totalPriority = tasks.reduce((acc, currentValue) => acc + currentValue.priority, 0)
 
 // natif
 let total = 0
