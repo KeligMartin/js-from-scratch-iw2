@@ -1,17 +1,5 @@
-class Task {
-	#author
-
-	constructor(title, description, priority, author) {
-		this.title = title
-		this.description = description
-		this.priority = priority
-		this.#author = author
-	}
-
-	get author() {
-		return this.author
-	}
-}
+import { Task } from './tasks/task.js';
+import { Owner } from './owners/owner.js';
 
 const task1 = new Task("Tache 1", "description 1", 1, "Kelig")
 const task2 = new Task("Tache 2", "description 2", 10)
