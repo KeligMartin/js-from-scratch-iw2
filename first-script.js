@@ -14,6 +14,19 @@ const task5 = new Task("Tache 5", "description 5", 0)
 
 const tasks = [task1, task2, task3, task4, task5]
 
+const tasksUrgentes = tasks.filter((element) => element.priority < 5)
+
+// filter natif
+const tasksUrgentesNatives = []
+for(let i = 0; i < tasks.length; i++) {
+	const element = tasks[i]
+	if(element.priority < 5) {
+		tasksUrgentesNatives.push(element)
+	}
+}
+
 console.table(tasks.sort((a, b) => a.priority - b.priority))
+console.table(tasksUrgentes)
+console.table(tasksUrgentesNatives)
 
 // fuction sort()
