@@ -37,7 +37,7 @@ function resolveAfter2Seconds() {
 function syncCall() {
 	console.log("starting sync");
 
-	const res =  resolveAfter2Seconds();
+	const res = resolveAfter2Seconds();
 	console.log("calling sync");
 
 	return res
