@@ -54,3 +54,6 @@ async function asyncCall() {
 
 asyncCall().then((res) => console.log(res)).catch((err) => console.error(err)).finally(() => console.log('terminé'))
 asyncCall().then((res) => console.log(res)).catch((err) => console.error(err)).finally(() => console.log('terminé'))
+
+// url à requêter : https://keligmartin.github.io/api/films.json
+
