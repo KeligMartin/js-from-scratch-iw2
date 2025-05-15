@@ -27,7 +27,7 @@ Pour déplacer un livre d'une colonne à l'autre, on peut cliquer sur un bouton 
 | Le groupe répond correctement à chaque question posée par le jury                                                             | 2 points         |
 | __Sous-Total__                                                                                                                | __16   points__  |
 | Bonus : Implémentation d'une notion (utile et conséquente) non abordée en cours                                               | 2 points         |
-| Bonus : L'expérience utilisateur est fluide (messages d'erreurs, affichage de chargement etc...)                              | 2 points         |
+| Bonus : Ajout d'une autre règle métier                                                                                        | 2 points         |
 | __Total__                                                                                                                     | __20   points__  |
 
 ### Contraintes et Règles
